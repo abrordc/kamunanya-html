@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-divece-width, initial-scale=1.0">
+    <title>Judul halaman</title>
+</head>
+<body style="text-align: center">
+    <h1>KAMU NANYAK?</h1>
+    <img src="cepmek.png" height="250px" width="250px" id="img-kamunanya">
+    <p id="clicks">kamu nanya : 0</p>
+    <button onclick="plus()">berapa harga outfit lo? </button>
+    <button onclick="minus()">maaf bang</button>
+</body>
+<script>
+    let clicks = 0 ;
+    function plus(){
+        const audio = new Audio("kamunanya.mp3")
+        audio.play()
+        clicks++
+        document.getElementById("clicks").innerHTML = "kamu telah nanyak : " + clicks
+    }
+    function minus(){
+        const audio = new Audio("kamunanya.mp3")
+        audio.play()
+        clicks--
+        document.getElementById("clicks").innerHTML = "kamu telah nanyak : " + clicks
+    }
+</script>
+</html>
